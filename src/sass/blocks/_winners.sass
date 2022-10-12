@@ -1,0 +1,49 @@
+.winners
+	position: relative
+	background: #111151
+	min-height: 500px
+	transform: skewY(14deg)
+	border-radius: 40px 40px 0 0
+	margin-top: -360px
+	border-top: 1px solid #111151
+	&::after
+		content:''
+		position: absolute
+		bottom: -85px
+		left: 0
+		width: 50vw
+		height: 175px
+		background: #111151
+		transform: skewY(-14deg)
+		z-index: -1
+
+	&__rotate
+		transform: skewY(-14deg)
+		width: 100%
+	&__subtitle
+		font-weight: 500
+		font-size: 28px
+		line-height: 33px
+		text-align: center
+		color: #FFFFFF
+		text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2)
+		margin-top: 11px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0 auto
+		margin-top: 72px
+		width: 1048px
+	&__inner
+		display: flex
+		flex-direction: column
+		width: 420px
+	&__person
+		font-weight: 700
+		font-size: 22px
+		line-height: 138.8%
+		color: #FFFFFF
+		margin-top: 24px
+		span
+			font-weight: 400

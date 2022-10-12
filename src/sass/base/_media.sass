@@ -1,0 +1,340 @@
+@media (max-width: 1200px)
+	.title
+		&_main
+			font-size: 25px
+	.description
+		font-size: 18px
+
+	.header
+		padding: 0 40px 0 34px
+		&__logo
+			height: 48px
+		&__menu
+			width: 270px
+		&__social
+			width: 176px
+		&__wrapper
+			width: 219px
+		&__federation
+			height: 40px
+		&__title
+			font-size: 16px
+			margin-left: 12px
+	
+	.main
+		&__wrapper
+			width: 880px
+		&__inner
+			width: 324px
+		&__shield
+			width: 214px
+			height: 214px
+		&__card
+			width: 454px
+	.promo
+		&__wrapper
+			width: 950px
+		&__inner
+			width: 578px
+		&__shield
+			width: 36%
+	.participation
+		&__wrapper
+			width: 76.3%
+		&__inner
+			width: 47.4%
+		img
+			width: 100%
+	.winners
+		&__wrapper
+			width: 76.3%
+		&__inner
+			width: 40%
+		img
+			width: 55.7%
+@media (max-width: 992px)
+	.title
+		font-size: 24px
+		line-height: 32px
+		&_main 
+			font-size: 25px
+			margin-top: 9px
+		&_promo
+			width: 290px
+	
+	.description
+		font-size: 14px
+		&_promo
+			margin-top: 20px
+
+	.subtitle
+		font-size: 16px
+		&_sponsors
+			margin-top: 40px
+			margin-bottom: 12px
+
+
+	.header
+		padding: 0px 30px 0 24px
+		&__logo
+			height: 34px
+		&__menu
+			width: 225px
+			&_link
+				font-size: 14px
+		&__social
+			width: 150px
+			img
+				width: 18px
+		&__wrapper
+			width: 193px
+		&__federation
+			height: 35px
+		&__title
+			font-size: 14px
+			margin-left: 12px
+	.main
+		&__wrapper
+			width: 690px
+			height: 550px
+		&__inner
+			width: 242px
+		&__shield
+			width: 190px
+			height: 190px
+		&__card
+			width: 370px
+	
+	.promo
+		&__wrapper
+			width: 725px
+		&__inner
+			width: 426px
+	
+	.winners
+		&__person
+			font-size: 16px
+
+	.sponsors
+		padding: 80px 0 95px 0
+		&__wrapper
+			width: 250px
+		&__logo
+			width: 200px
+			&_huawei
+				width: 220px
+			&_circle
+				width: 100px
+@media (max-width: 768px)
+	.title
+		&_main
+			font-size: 18px
+			line-height: 24px
+			margin-top: 0
+		&_promo
+			display: none
+			&_mobile
+				display: block
+				text-align: center
+				width: auto
+				margin-bottom: 40px
+
+	.description
+		&_promo
+			margin-top: 0
+
+	.subtitle
+		font-size: 14px
+		&_footer
+			display: block
+			margin-bottom: 20px
+	
+	.header
+		padding: 0px 90px 0 24px
+		&__menu
+			display: none
+		&__social
+			display: none
+
+	.hamburger
+		position: fixed
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		padding: 11px 0
+		border-radius: 10px
+		border: 2px solid black
+		width: 46px
+		height: 46px
+		background-color: orange
+		top: 14px
+		right: 10px
+		z-index: 5
+		span
+			display: block
+			height: 4px
+			width: 34px
+			background-color: #fff
+			transition: 0.5s all
+		&_active
+			span
+				&:nth-child(1)
+					transform: translateY(8px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(-8px) rotate(45deg)
+	
+	.menu
+		display: block
+		position: fixed
+		top: 0
+		left: -100%
+		background-color: #111151
+		z-index: 4
+		height: 100vh
+		width: 100%
+		visibility: hidden
+		opacity: 0
+		transition: 0.6s
+		&.active
+			left: 0
+			visibility: visible
+			opacity: 1
+
+		&__wrapper
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 226px
+			padding: 16px
+		&__title
+			line-height: 21px
+		&__link
+			padding: 20px 30px
+			border-top: 1px solid #878787
+		&__item
+			text-transform: uppercase
+		&__social
+			position: absolute
+			bottom: 50px
+			left: 50%
+			transform: translateX(-50%)
+			img
+				width: 26px
+
+	.main
+		&__wrapper
+			width: 490px
+			height: 450px
+		&__inner
+			width: 200px
+		&__shield
+			width: 140px
+			height: 140px
+		&__card
+			width: 260px
+
+	.promo
+		&__wrapper
+			width: 540px
+		&__inner
+			width: 308px
+
+	.winners
+		&__person
+			font-size: 14px
+		&__wrapper
+			width: 80%
+	
+	.footer
+		flex-direction: column
+		justify-content: center
+		height: 140px
+		padding: 0
+		&__logo
+			display: none
+		&__menu
+			display: none
+		&__social
+			display: flex
+			width: 260px
+		&__wrapper
+			display: none
+	
+@media (max-width: 576px)
+	.divider
+		margin: 0 auto
+		margin-top: 7px
+		&_white
+			margin-top: 10px
+
+	.title
+		&_promo
+			&_mobile
+				margin-bottom: 20px
+		&_participation
+			margin-top: -80px
+		&_winners
+			margin-top: 52px
+	.description
+		&_participation
+			text-align: center
+			margin-top: 15px
+
+	.subtitle
+		&_participation
+			text-align: center
+
+	.header
+		&__wrapper
+			display: none
+
+	.main
+		&__wrapper
+			width: 300px
+			flex-direction: column
+			justify-content: center
+		&__card
+			margin-top: 40px
+
+	.promo
+		padding: 60px 20px
+		&__wrapper
+			flex-direction: column
+			width: 100%
+		&__inner
+			width: 100%
+		&__shield
+			width: 128px
+			margin-bottom: 10px
+	
+	.participation
+		padding: 0 20px
+		padding-bottom: 400px
+		&__wrapper
+			width: 100%
+			margin-top: 40px
+			
+	.winners
+		padding: 0  20px
+		&__wrapper
+			flex-direction: column
+			width: 100%
+			margin-top: 40px
+			&_reverse
+				flex-direction: column-reverse
+		&__inner
+			width: 100%
+			align-items: center
+		img
+			width: 100%
+			margin-bottom: 15px
+		&__person
+			margin-top: 12px
+   
+
+
+			
+	

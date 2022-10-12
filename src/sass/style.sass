@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap')
+
+* 
+	font-family: 'Poppins', sans-serif
+	margin: 0
+	padding: 0
+h1, h2, h3, ul, p
+	margin: 0
+	padding: 0
+
+@import 'base/variables'
+
+.hamburger, .menu
+	display: none
+
+.pageup
+		position: fixed
+		display: flex
+		justify-content: center
+		align-items: center
+		bottom: 14px
+		right: 10px
+		z-index: 3
+		width: 46px
+		height: 46px
+		background-color: orange
+		border: 2px solid black
+		border-radius: 100%
+		color: #fff
+		font-size: 28px
+
+.divider
+	width: 24px
+	height: 3px
+	background: #111151
+	border-radius: 11px
+	margin-top: 11px
+	&_white
+		background: #fff
+		margin-top: 22px
+
+@import 'blocks/title'
+@import 'blocks/description'
+@import 'blocks/subtitle'
+@import 'blocks/header'
+@import 'blocks/main'
+@import 'blocks/promo'
+@import 'blocks/participation'
+@import 'blocks/winners'
+@import 'blocks/sponsors'
+@import 'base/media'
+
+
+
