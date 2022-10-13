@@ -94,6 +94,7 @@
 			font-size: 14px
 			margin-left: 12px
 	.main
+		min-height: 300px
 		&__wrapper
 			width: 690px
 			height: 550px
@@ -149,7 +150,11 @@
 			display: block
 			margin-bottom: 20px
 	
+	.pageup
+		display: flex
+	
 	.header
+		position: static
 		padding: 0px 90px 0 24px
 		&__menu
 			display: none
@@ -314,11 +319,19 @@
 		padding: 0 20px
 		padding-bottom: 400px
 		&__wrapper
+			flex-direction: column
 			width: 100%
 			margin-top: 40px
+		&__inner
+			width: 100%
+		&__group
+			&_mobile
+				display: block
 			
 	.winners
 		padding: 0  20px
+		&__subtitle
+			font-size: 22px
 		&__wrapper
 			flex-direction: column
 			width: 100%
@@ -333,6 +346,11 @@
 			margin-bottom: 15px
 		&__person
 			margin-top: 12px
+			text-align: center
+
+	.hidden-320
+		display: none
+
    
 
 

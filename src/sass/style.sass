@@ -8,6 +8,12 @@ h1, h2, h3, ul, p
 	margin: 0
 	padding: 0
 
+body
+	&::-webkit-scrollbar
+		background: #111151
+	&::-webkit-scrollbar-thumb
+		background-color: orange
+
 @import 'base/variables'
 
 .hamburger, .menu
@@ -15,7 +21,7 @@ h1, h2, h3, ul, p
 
 .pageup
 		position: fixed
-		display: flex
+		display: none
 		justify-content: center
 		align-items: center
 		bottom: 14px
